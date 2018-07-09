@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="popupWindowDefaultAnimation" >
+        <item name="android:windowEnterAnimation">@anim/popupwindow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_fade_out</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArrowMenu">
+        <attr name="arrowmenu_menuImage" format="reference" />
+        <attr name="arrowmenu_menuName" format="reference|string" />
+        <attr name="arrowmenu_isShowArrow" format="boolean" />
+        <attr name="arrowmenu_menuhint" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="DividerLineView">
+        <attr name="dividerline_orientationMode" >
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="dividerline_color" format="color|reference" />
+    </declare-styleable>
+</resources>

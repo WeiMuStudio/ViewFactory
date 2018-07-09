@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Viewlib</string>
+
+    <string name="dialog_positive_text_default">确定</string>
+    <string name="dialog_negative_text_default">取消</string>
+    <string name="dialog_loading_message_default">加载中</string>
+    <string name="dialog_date_dialog_title_default">设置时间</string>
+
+    <string name="status_page_empty_default">数据为空</string>
+    <string name="status_page_network_failure_default">数据为空</string>
+    <string name="status_page_refresh_default">正在刷新....</string>
+</resources>

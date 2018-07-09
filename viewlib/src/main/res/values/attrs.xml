@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FormItemView">
+        <attr name="form_icon" format="reference" />
+        <attr name="form_name" format="reference|string" />
+        <attr name="form_isShowArrow" format="boolean" />
+        <attr name="form_value" format="reference|string" />
+        <attr name="form_value_color" format="reference|color" />
+    </declare-styleable>
+
+</resources>
