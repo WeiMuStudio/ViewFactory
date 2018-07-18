@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="UIToolbar">
+        <attr name="uiToolbar_title" format="string|reference" />
+        <attr name="uiToolbar_titleColor" format="color|reference" />
+        <attr name="uiToolbar_titleSize" format="dimension|reference" />
+        <attr name="uiToolbar_navigateIcon" format="reference" />
+        <attr name="uiToolbar_background" format="reference|color" />
+        <attr name="uiToolbar_maxHeight" format="dimension|reference" />
+        <attr name="uiToolbar_menuTextColor" format="color|reference" />
+        <attr name="uiToolbar_menuTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+
     <declare-styleable name="FormItemView">
         <attr name="form_icon" format="reference" />
         <attr name="form_name" format="reference|string" />

@@ -86,7 +86,9 @@ public class FormItemView extends ViewGroup {
             if (mMenuIconImageView == null) {
                 mMenuIconImageView = new ImageView(getContext());
             }
-            addView(mMenuIconImageView);
+            if (!isChildOrHidden(mMenuIconImageView)) {
+                addView(mMenuIconImageView);
+            }
         } else {
             if (mMenuIconImageView != null) {
                 removeView(mMenuIconImageView);
@@ -103,7 +105,9 @@ public class FormItemView extends ViewGroup {
                 mArrowImageView = new ImageView(getContext());
                 mArrowImageView.setImageResource(R.drawable.ic_right_arrow);
             }
-            addView(mArrowImageView);
+            if (!isChildOrHidden(mArrowImageView)) {
+                addView(mArrowImageView);
+            }
         } else {
             if (mArrowImageView != null) {
                 removeView(mArrowImageView);
@@ -126,7 +130,9 @@ public class FormItemView extends ViewGroup {
                 mHintTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
                 mHintTextView.setTextColor(valueTextColor);
             }
-            addView(mHintTextView);
+            if (!isChildOrHidden(mHintTextView)) {
+                addView(mHintTextView);
+            }
         } else {
             if (mHintTextView != null) {
                 removeView(mHintTextView);
@@ -227,6 +233,10 @@ public class FormItemView extends ViewGroup {
     @Override
     protected boolean checkLayoutParams(ViewGroup.LayoutParams p) {
         return super.checkLayoutParams(p) && p instanceof LayoutParams;
+    }
+
+    private boolean isChildOrHidden(View child) {
+        return child.getParent() == this;
     }
 
 
